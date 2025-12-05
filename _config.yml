@@ -194,12 +194,13 @@ exclude:
   - vendor
   # my exclude
   - _pages/books.md
-  - _pages/repositories.md
+  # - _pages/repositories.md
+  - _pages/dropdown.md
+  - _pages/profiles.md
+  - _pages/teaching.md
 
   #- _pages/blog.md
   #- _pages/news.md
-  #- _pages/teaching.md
-  #- _posts/
 
 keep_files:
   - CNAME
