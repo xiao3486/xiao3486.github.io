@@ -1,3 +1,11 @@
-<div class="publications">
+{% capture selected_pubs %}
   {% bibliography --group_by none --query @*[selected=true]* %}
-</div>
+{% endcapture %}
+
+{% assign cleaned = selected_pubs | strip %}
+
+{% if cleaned != '' %}
+  <div class="publications">
+    {{ selected_pubs }}
+  </div>
+{% endif %}
